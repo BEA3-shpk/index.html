@@ -1,0 +1,90 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#111827;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:90%;max-width:1200px;margin:auto}
+.topbar{background:#06111d;color:#fff;font-size:14px}
+.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:10px 0;flex-wrap:wrap}
+.topbar span{margin-right:18px}
+.gold{color:#d99a28}
+header{background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:20px}
+.logo{font-size:34px;font-weight:900;color:#06111d;letter-spacing:.5px}
+.logo span{color:#d99a28}
+.logo small{font-size:16px}
+.nav ul{display:flex;list-style:none;gap:28px;font-size:14px;font-weight:700;text-transform:uppercase}
+.nav a:hover{color:#d99a28}
+.menu-btn{display:none;background:#d99a28;border:0;padding:10px 14px;border-radius:6px;font-weight:700;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:6px;font-weight:800;transition:.25s;border:0;cursor:pointer}
+.btn-primary{background:#d99a28;color:#fff}
+.btn-primary:hover{background:#b87f1f}
+.btn-outline{border:2px solid #fff;color:#fff}
+.btn-outline:hover{background:#fff;color:#06111d}
+.hero{min-height:82vh;background:linear-gradient(90deg,rgba(6,17,29,.92),rgba(6,17,29,.62)),url('../assets/muratime-profesionale.png') center/cover no-repeat;color:#fff;display:flex;align-items:center}
+.hero-content{max-width:720px}
+.eyebrow{color:#d99a28;text-transform:uppercase;font-weight:900;font-size:14px;letter-spacing:.8px;margin-bottom:12px}
+.hero h1{font-size:clamp(40px,6vw,76px);line-height:1.05;margin-bottom:20px}
+.hero p{font-size:19px;color:#e5e7eb;margin-bottom:28px;max-width:650px}
+.btn-group{display:flex;gap:14px;flex-wrap:wrap}
+.section{padding:80px 0}
+.section-light{background:#f5f6f8}
+.section-title{text-align:center;margin-bottom:44px}
+.section-title h2{font-size:38px;margin-bottom:10px}
+.section-title p{color:#6b7280;max-width:720px;margin:auto}
+.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+.card{background:#fff;border-radius:12px;padding:28px 18px;text-align:center;box-shadow:0 8px 26px rgba(0,0,0,.08);transition:.25s}
+.card:hover{transform:translateY(-5px)}
+.icon{font-size:40px;margin-bottom:14px;color:#d99a28}
+.card h3{font-size:17px;margin-bottom:10px}
+.card p{font-size:14px;color:#4b5563}
+.about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:34px;align-items:center}
+.about-box{background:#fff;border-radius:14px;padding:36px;box-shadow:0 8px 26px rgba(0,0,0,.08)}
+.about-box h2{font-size:34px;margin-bottom:14px}
+.about-box p,.about-box li{color:#4b5563}
+.about-box ul{margin-top:18px;list-style:none}
+.about-box li{margin-bottom:8px}
+.about-box li:before{content:'✓';color:#d99a28;font-weight:900;margin-right:8px}
+.about-img img{width:100%;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.14)}
+.values{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+.value{text-align:center}
+.value span{font-size:38px;display:block;margin-bottom:10px}
+.cta{background:linear-gradient(rgba(6,17,29,.88),rgba(6,17,29,.88)),url('../assets/muratime-profesionale.png') center/cover no-repeat;color:#fff;text-align:center}
+.cta h2{font-size:38px;margin-bottom:12px}
+.cta p{max-width:720px;margin:0 auto 24px;color:#e5e7eb}
+.contact-info{background:#06111d;color:#fff;border-radius:14px;padding:34px}
+.contact-info h2{color:#d99a28;margin-bottom:18px}
+.contact-info p{margin-bottom:12px}
+.form{background:#fff;border-radius:14px;padding:30px;box-shadow:0 8px 26px rgba(0,0,0,.08)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form input,.form select,.form textarea{width:100%;padding:14px;border:1px solid #d1d5db;border-radius:6px;font-size:15px}
+.form textarea{grid-column:1/-1;min-height:130px;resize:vertical}
+.form button{margin-top:14px}
+.form-note{margin-top:12px;color:#4b5563}
+.footer{background:#06111d;color:#d1d5db;padding:48px 0 18px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+.footer h3{color:#fff;margin-bottom:14px}
+.footer a{display:block;margin-bottom:8px;color:#d1d5db}
+.footer a:hover{color:#d99a28}
+.copyright{text-align:center;border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:18px;font-size:14px}
+.float-actions{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:999}
+.float-actions a,.float-actions button{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#d99a28;color:#fff;font-size:22px;box-shadow:0 8px 22px rgba(0,0,0,.25);border:0;cursor:pointer}
+#toTop{display:none}
+@media(max-width:1000px){
+  .cards,.values{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.contact-grid,.footer-grid{grid-template-columns:1fr}
+  .hero{text-align:center}
+  .hero-content{margin:auto}
+  .btn-group{justify-content:center}
+}
+@media(max-width:760px){
+  .nav{align-items:flex-start;flex-wrap:wrap}
+  .menu-btn{display:block}
+  .nav ul{display:none;flex-direction:column;width:100%;gap:12px;padding-top:15px}
+  .nav ul.open{display:flex}
+  .logo{font-size:28px}
+  .cards,.values,.form-grid{grid-template-columns:1fr}
+  .section{padding:56px 0}
+  .topbar .container{font-size:13px}
+  .hero{min-height:74vh}
+  .hero h1{font-size:42px}
+}
